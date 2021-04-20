@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <script src="./src/tokenizer.js"></script>
+    <script src="./src/parser.js"></script>
+    <script src="./src/compute.js"></script>
+    <script>
+        console.log(compute(parser(tokenizer('2+5-3×4'))))
+        console.log(compute(parser(tokenizer('2+5-3×4÷2'))))
+        console.log(compute(parser(tokenizer('2+5-3×4÷2+(10-5×3)×(6-3)'))))
+        console.log(compute(parser(tokenizer('2+(5+3×(4÷2)+(10-5×3)×(6-3))'))))
+    </script>
+</body>
+</html>
