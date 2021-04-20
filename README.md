@@ -1,5 +1,7 @@
 # compiler_add-subtract-multiply-divide
-ast +-×÷，加减乘除编译器  
+正整数的加(+)、减(-)、乘(×)、除(÷)运算  
+编译器初尝试   
+
 测试用例
 
 ```
